@@ -47,6 +47,7 @@ const InsetShadow = (props) => {
         bottom: 0,
         left: 0,
         right: 0,
+        borderRadius:props.borderRadius,
         backgroundColor:"transparent"
 
     }} source={{

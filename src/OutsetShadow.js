@@ -50,6 +50,7 @@ const OutsetShadow = (props) => {
         bottom: -boundingBox.maxY,
         left: boundingBox.minX,
         right: -boundingBox.maxX,
+        borderRadius:props.borderRadius,
         backgroundColor:"transparent"
 
     }} source={{

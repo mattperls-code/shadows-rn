@@ -16,7 +16,7 @@ const Shadow = (props) => {
     return (
         <View style={
             [
-                styles.props,
+                props.style,
                 {
                     overflow: "visible"
                 }

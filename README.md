@@ -35,6 +35,8 @@ Installation:
 
 ```
 npm install shadows-rn
+react-native link
+cd ios && pod install
 ```
 
 Import:

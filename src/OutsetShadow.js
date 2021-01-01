@@ -14,7 +14,7 @@ const OutsetShadow = (props) => {
 
     let shadowsCSS = []
 
-    props.options.forEach(shadow => {
+    props.shadows.forEach(shadow => {
         let offsetX = 0
         let offsetY = 0
         let radius = 0

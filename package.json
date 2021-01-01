@@ -11,8 +11,14 @@
     "native",
     "react-native",
     "rn",
+    "inset",
+    "outset",
     "inner",
     "outer",
+    "inset-shadow",
+    "outset-shadow",
+    "inner-shadow",
+    "outer-shadow",
     "transparent",
     "neomorph",
     "neomorphism",
@@ -26,5 +32,9 @@
     "react": "^17.0.1",
     "react-native": "^0.63.4",
     "react-native-webview": "^11.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattperls-code/shadow-rn"
   }
 }

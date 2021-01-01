@@ -2,23 +2,8 @@ import React from "react"
 
 import { View, StyleSheet } from "react-native"
 
-import InnerShadow from "./InnerShadow"
-import OuterShadow from "./OuterShadow"
-
-/*
-    - Inset or Outset Shadow Component for React native
-    -
-    - @param {object} style
-    -    Style Sheet Object
-    - @param {boolean} inset
-    -    Shadow is Inset?
-    - @param {array} shadows
-    -    Shadow Styling Options
-    -         {number} offsetX
-    -         {number} offsetY
-    -         {number} radius
-    -         {string} color
-*/
+import InsetShadow from "./InsetShadow"
+import OutsetShadow from "./OutsetShadow"
 
 const Shadow = (props) => {
 
@@ -40,8 +25,8 @@ const Shadow = (props) => {
             <View style={styles.container}>
                 {
                     props.inset ?
-                        <InnerShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/> :
-                        <OuterShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/>
+                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/> :
+                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/>
                 }
             </View>
             <View style={styles.container}>

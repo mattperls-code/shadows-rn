@@ -1,4 +1,4 @@
-# shadow-rn
+# shadows-rn
 
 &nbsp;
 
@@ -34,13 +34,13 @@ Transparent Background
 Installation:
 
 ```
-npm install shadow-rn
+npm install shadows-rn
 ```
 
 Import:
 
 ```
-import Shadow from "shadow-rn"
+import Shadow from "shadows-rn"
 ```
 
 Basic Use:

@@ -48,9 +48,11 @@ Basic Use:
 ```
 <Shadow
     style = {
-        width: 200,
-        height: 100,
-        backgroundColor: "yellow"
+        {
+            width: 200,
+            height: 100,
+            backgroundColor: "yellow"
+        }
     }
     shadows = {
         [

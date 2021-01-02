@@ -25,8 +25,8 @@ const Shadow = (props) => {
             <View style={styles.container}>
                 {
                     props.inset ?
-                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/> :
-                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius}/>
+                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0}/> :
+                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0}/>
                 }
             </View>
             <View style={styles.container}>
@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
     container: {
         position: "absolute",
         top: 0,
-        bottom: 0,
         left: 0,
-        right: 0,
+        width: "100%",
+        height: "100%",
         overflow: "visible"
     }
 })

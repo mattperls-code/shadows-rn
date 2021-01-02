@@ -31,21 +31,26 @@ Transparent Background
 
 &nbsp;
 
-Installation:
+### Installation:
 
 ```
 npm install shadows-rn
+```
+
+You should also install react, react-native, and **react-native-webview** if not already installed
+
+```
 react-native link
 cd ios && pod install
 ```
 
-Import:
+### Import:
 
 ```
 import Shadow from "shadows-rn"
 ```
 
-Basic Use:
+### Basic Use:
 
 ```
 <Shadow
@@ -113,7 +118,7 @@ These objects are structured as
 }
 ```
 
-If they are left unset or as the wrong type, they will automatically default and send a warning in the console.
+If they are left unset or as the wrong type, they will automatically default and output a warning in the console.
 
 ### Inset:
 

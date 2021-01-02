@@ -28,11 +28,6 @@
     "mattperlscode",
     "mperlsdeveloping"
   ],
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-native": "^0.63.4",
-    "react-native-webview": "^11.0.2"
-  },
   "peerDependencies": {
     "react": "^17.0.1",
     "react-native": "^0.63.4",

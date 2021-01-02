@@ -39,7 +39,7 @@ const InsetShadow = (props) => {
         )
     })
 
-    shadowsCSS = shadowsCSS.join(", ")
+    shadowsCSS = shadowsCSS.join(",")
 
     return <WebView  style={{
         position: "absolute",
@@ -58,8 +58,16 @@ const InsetShadow = (props) => {
                     <head>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     </head>
-                    <body style="margin:0;width:100vw;height:100vh;">
-                        <div style="position:"absolute"; top: 0; bottom: 0; left: 0; right: 0; box-shadow: ${shadowsCSS}; border-radius: ${props.borderRadius ?? 0}px"></div>
+                    <body style="margin:0;">
+                        <div style="
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            width:100vw;
+                            height:100vh;
+                            box-shadow: ${shadowsCSS};
+                            border-radius:${props.borderRadius}px;
+                        "></div>
                     </body>
                 </html>
             `

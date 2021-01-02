@@ -1,5 +1,5 @@
 /*
-    v2.1.2
+    v2.2.0
 */
 
 import React from "react"
@@ -9,9 +9,16 @@ import { View, StyleSheet } from "react-native"
 import InsetShadow from "./InsetShadow"
 import OutsetShadow from "./OutsetShadow"
 
-const Shadow = (props) => {
+/**
+ * @param {object} props.style Style sheet object applied as a container for the shadow component
+ * @param {object} props.shadows Array of shadow styles to be rendered
+ * @param {boolean} props.inset Whether the shadow should be inset or outset
+ * @param {object} props.children Components inside of the shadow
+ */
 
-    if (!Array.isArray(props.shadows)) {
+const Shadow = ({style,shadows,inset,children}) => {
+
+    if (!Array.isArray(shadows)) {
         throw new Error(
             "Property 'shadows' must be an array"
         )
@@ -20,7 +27,7 @@ const Shadow = (props) => {
     return (
         <View style={
             [
-                props.style,
+                style,
                 {
                     overflow: "visible"
                 }
@@ -28,14 +35,14 @@ const Shadow = (props) => {
         }>
             <View style={styles.container}>
                 {
-                    props.inset ?
-                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0} /> :
-                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0} />
+                    inset ?
+                        <InsetShadow shadows={shadows} borderRadius={style.borderRadius ?? 0} /> :
+                        <OutsetShadow shadows={shadows} borderRadius={style.borderRadius ?? 0} />
                 }
             </View>
             <View style={styles.container}>
                 {
-                    props.children
+                    children
                 }
             </View>
         </View>

@@ -6,13 +6,13 @@
 
 &nbsp;
 
-<img alt="shadows-rn example" src="./examples/AppJS.png" style="height:70vh;">
+<img alt="shadows-rn" src="./examples/AppJS.png" style="width:250px;"/>
 
 &nbsp;
 
 ---
 
-v2.1.2
+v2.2.0
 
 ## Features:
 
@@ -103,6 +103,20 @@ import Shadow from "shadows-rn"
 
 This is the styling of the container element for the shadow.
 It can have all standard styles that a view could normally have, **except overflow**, which will be overruled to visible.
+Any styles intended for the children of the shadow component **should be inside a container element inside the shadow component** for their styles to be applied.
+For example, to align text inside a shadow component it would be done like this:
+
+```
+<Shadow style={/* Shadow Styles */} shadows={[/* Shadows */]} inset={/* Shadow Is Inset? */}>
+    <View style={
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
+    }>
+        <Text>Aligned Text</Text>
+    </View>
+</Shadow>
+```
 
 &nbsp;
 

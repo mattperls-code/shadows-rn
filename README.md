@@ -6,11 +6,13 @@
 
 &nbsp;
 
----
+![shadows-rn example](examples/AppJS.png)
 
 &nbsp;
 
-v2.1.0
+---
+
+v2.1.1
 
 ## Features:
 

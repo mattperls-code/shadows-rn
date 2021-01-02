@@ -1,6 +1,6 @@
 {
   "name": "shadows-rn",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A Component For Easy Shadows In React Native",
   "main": "./src/index.js",
   "license": "MIT",

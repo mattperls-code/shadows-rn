@@ -1,7 +1,10 @@
+/*
+    v2.0.1
+*/
+
 import React from "react"
 
 import { WebView } from "react-native-webview"
-
 
 const InsetShadow = (props) => {
 
@@ -41,7 +44,7 @@ const InsetShadow = (props) => {
 
     shadowsCSS = shadowsCSS.join(",")
 
-    return <WebView  style={{
+    return <WebView scrollEnabled={false} style={{
         position: "absolute",
         top: 0,
         bottom: 0,

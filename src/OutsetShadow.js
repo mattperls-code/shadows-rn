@@ -1,3 +1,7 @@
+/*
+    v2.0.1
+*/
+
 import React from "react"
 
 import { View } from "react-native"

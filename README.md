@@ -10,6 +10,8 @@
 
 &nbsp;
 
+v2.0.1
+
 ## Features:
 
 &nbsp;

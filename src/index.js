@@ -1,5 +1,5 @@
 /*
-    v2.0.1
+    v2.1.0
 */
 
 import React from "react"
@@ -11,7 +11,7 @@ import OutsetShadow from "./OutsetShadow"
 
 const Shadow = (props) => {
 
-    if(!Array.isArray(props.shadows)){
+    if (!Array.isArray(props.shadows)) {
         throw new Error(
             "Property 'shadows' must be an array"
         )
@@ -29,8 +29,8 @@ const Shadow = (props) => {
             <View style={styles.container}>
                 {
                     props.inset ?
-                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0}/> :
-                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0}/>
+                        <InsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0} /> :
+                        <OutsetShadow shadows={props.shadows} borderRadius={props.style.borderRadius ?? 0} />
                 }
             </View>
             <View style={styles.container}>

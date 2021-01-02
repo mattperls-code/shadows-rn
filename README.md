@@ -6,13 +6,13 @@
 
 &nbsp;
 
-![shadows-rn example](examples/AppJS.png)
+<img alt="shadows-rn example" src="./examples/AppJS.png" style="height:70vh;">
 
 &nbsp;
 
 ---
 
-v2.1.1
+v2.1.2
 
 ## Features:
 

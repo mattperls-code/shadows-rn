@@ -1,36 +1,23 @@
 {
   "name": "shadows-rn",
-  "version": "2.2.0",
+  "version": "3.0.01",
+  "author": {
+    "name": "Matthew Perlman",
+    "url": "https://github.com/mattperls-code/",
+    "email": "mattperls.code@gmail.com"
+  },
   "description": "A Component For Easy Shadows In React Native",
   "main": "./src/index.js",
   "license": "MIT",
   "keywords": [
     "shadows-rn",
-    "shadows",
-    "react",
-    "native",
     "react-native",
-    "rn",
-    "inset",
-    "outset",
-    "inner",
-    "outer",
-    "inset-shadow",
-    "outset-shadow",
-    "inner-shadow",
-    "outer-shadow",
-    "transparent",
     "neomorph",
-    "neomorphism",
-    "neomorphic",
-    "perlscode",
-    "mattperls-code",
-    "mattperlscode",
-    "mperlsdeveloping"
+    "mattperls-code"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "react": "^17.0.1",
-    "react-native": "^0.63.4",
+    "react-native": "^0.64.2",
     "react-native-webview": "^11.0.2"
   },
   "repository": {

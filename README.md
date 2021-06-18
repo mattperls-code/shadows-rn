@@ -6,23 +6,28 @@
 
 &nbsp;
 
-<img alt="shadows-rn" src="./examples/AppJS.png" style="width:250px;"/>
+<img alt="shadows-rn" src="./example/AppJS.png" style="width:250px;"/>
 
 &nbsp;
 
 ---
 
-v2.2.0
+v3.0.01
 
 ## Features:
 
 &nbsp;
 
-Inset Shadows  
-Outset Shadows  
-Multiple Shadows  
-Child Components  
-Border Radius  
+Inset Shadows
+
+Outset Shadows
+
+Multiple Shadows
+
+Child Components
+
+Multiple Border Radius
+
 Transparent Background
 
 &nbsp;
@@ -41,11 +46,11 @@ Transparent Background
 npm install shadows-rn
 ```
 
-You should also install react, react-native, and **react-native-webview** if not already installed
+You should also **react-native-webview** if not already installed
 
 ```
 react-native link
-cd ios && pod install
+cd ios && pod install && cd ..
 ```
 
 ### Import:

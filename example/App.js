@@ -1,8 +1,3 @@
-/*
-  v2.2.0
-  An Example Of How To Use shadows-rn
-*/
-
 import React from "react";
 import { View, Text, Dimensions, StyleSheet } from "react-native";
 
@@ -268,7 +263,10 @@ const styles = StyleSheet.create({
     width: 35 * vw,
     height: 15 * vh,
     backgroundColor: "rgb(220,220,220)",
-    borderRadius: 20,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 40,
+    borderBottomLeftRadius: 60,
+    borderBottomRightRadius: 5
   },
   shadowD: {
     position: "absolute",
@@ -277,7 +275,10 @@ const styles = StyleSheet.create({
     width: 35 * vw,
     height: 15 * vh,
     backgroundColor: "rgb(220,220,220)",
-    borderRadius: 20,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 40,
+    borderBottomLeftRadius: 60,
+    borderBottomRightRadius: 5
   },
   shadowE: {
     position: "absolute",

@@ -1,16 +1,17 @@
 /*
-    v2.2.0
+    © 2021 Matthew Perlman
+    shadows-rn v3.0.01
 */
 
 import React from "react"
 
 import { WebView } from "react-native-webview"
 
-const InsetShadow = (props) => {
+const InsetShadow = ({ shadows, borderRadiusCorners }) => {
 
     let shadowsCSS = []
 
-    props.shadows.forEach(shadow => {
+    shadows.forEach(shadow => {
         let offsetX = 0
         let offsetY = 0
         let radius = 0
@@ -50,7 +51,10 @@ const InsetShadow = (props) => {
         bottom: 0,
         left: 0,
         right: 0,
-        borderRadius:props.borderRadius,
+        borderTopLeftRadius: borderRadiusCorners.tl,
+        borderTopRightRadius: borderRadiusCorners.tr,
+        borderBottomLeftRadius: borderRadiusCorners.bl,
+        borderBottomRightRadius: borderRadiusCorners.br,
         backgroundColor:"transparent"
 
     }} source={{
@@ -69,7 +73,10 @@ const InsetShadow = (props) => {
                             width:100vw;
                             height:100vh;
                             box-shadow: ${shadowsCSS};
-                            border-radius:${props.borderRadius}px;
+                            border-top-left-radius: ${borderRadiusCorners.tl}px;
+                            border-top-right-radius: ${borderRadiusCorners.tr}px;
+                            border-bottom-left-radius: ${borderRadiusCorners.bl}px;
+                            border-bottom-right-radius: ${borderRadiusCorners.br}px;
                         "></div>
                     </body>
                 </html>

@@ -1,5 +1,6 @@
 /*
-    v2.2.0
+    © 2021 Matthew Perlman
+    shadows-rn v3.0.01
 */
 
 import React from "react"
@@ -9,7 +10,7 @@ import { View } from "react-native"
 import { WebView } from "react-native-webview"
 
 
-const OutsetShadow = (props) => {
+const OutsetShadow = ({ shadows, borderRadiusCorners }) => {
 
     let boundingBox = {
         minX: 0,
@@ -20,7 +21,7 @@ const OutsetShadow = (props) => {
 
     let shadowsCSS = []
 
-    props.shadows.forEach(shadow => {
+    shadows.forEach(shadow => {
         let offsetX = 0
         let offsetY = 0
         let radius = 0
@@ -90,7 +91,10 @@ const OutsetShadow = (props) => {
                                     width:calc(100vw - ${boundingBox.maxX-boundingBox.minX}px);
                                     height:calc(100vh - ${boundingBox.maxY-boundingBox.minY}px);
                                     box-shadow: ${shadowsCSS};
-                                    border-radius:${props.borderRadius}px;
+                                    border-top-left-radius: ${borderRadiusCorners.tl}px;
+                                    border-top-right-radius: ${borderRadiusCorners.tr}px;
+                                    border-bottom-left-radius: ${borderRadiusCorners.bl}px;
+                                    border-bottom-right-radius: ${borderRadiusCorners.br}px;
                                 "></div>
                             </body>
                         </html>
